@@ -24,7 +24,7 @@
                     <h2>a better way to camp</h2>
                 </div>
                     <div class="mt-4 col col-md-4 col-xl-2">
-                        <a role="button" class="btn btn-lg btn-info text-nowrap" data-toggle="modal" data-target="#reserveModal">Reserve Campsite</a>
+                        <a id="reserveButton" role="button" class="btn btn-lg btn-info text-nowrap">Reserve Campsite</a>
                     </div>
             </div>
         </div>
@@ -32,7 +32,7 @@
         <div id="reserveModal" class="modal fade" role="dialog">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
-                    <div class="modal-header bg-info text-white">
+                    <div class="modal-header">
                         <h3 class="modal-title">Reserve a Campsite</h3>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
@@ -40,7 +40,7 @@
                         <div class="container-fluid">
                             <form>
                                 <div class="form-group row">
-                                    <label class="col-sm-6 col-form-label" for="numCampers">Number of Campers:</label>
+                                    <label class="text-dark col-sm-6 col-form-label" for="numCampers">Number of Campers:</label>
                                         <div class="col">
                                             <select class="form-control" name="numCampers" id="numCampers">
                                                 <option value="select">Select...</option>
@@ -55,13 +55,13 @@
                                 </div>
                                 
                                 <div class="form-group row">
-                                    <label class="col col-sm-6" for="date">Date:</label>
+                                    <label class="text-dark col col-sm-6" for="date">Date:</label>
                                     <div class="col col-sm-6">
                                         <input class="form-control" type="date" id="date" name="date">
                                     </div>
                                 </div>    
                                 <div class="form-group row">
-                                    <label class="col-sm-6 col-form-label">Campsite Type</label>
+                                    <label class="text-dark col-sm-6 col-form-label">Campsite Type</label>
                                         <div class="col-2 btn-group btn-group-toggle" data-toggle="buttons">
                                             <label class="btn btn-success active">
                                                 <input type="radio" name="siteType" id="siteTent" autocomplete="off" checked> Tent
@@ -89,7 +89,7 @@
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30" /></a>
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+            <button id="loginButton" class="navbar-toggler ml-auto" type="button">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="nucampNavbar">
@@ -111,7 +111,7 @@
     <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="text-white modal-header">
                     <h3 class="modal-title">Login</h3>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
